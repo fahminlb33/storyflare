@@ -16,7 +16,7 @@ export async function onRequestPost(context) {
         messages: [
             {
                 role: "system",
-                content: "You are a helpful assistant to describe the best background image for a situation. Only return the background description without extra introduction. Keep it simple and concise."
+                content: "You are a helpful assistant to describe the best background image for a situation. If it mentions a place, use it as priority, for example classroom or city hall. Only return the background description in generalized context without extra introduction. Keep it simple and concise."
             },
             {
                 role: "user",
