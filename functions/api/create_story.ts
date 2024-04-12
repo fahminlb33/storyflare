@@ -16,7 +16,7 @@ export async function onRequest(context) {
         messages: [
             {
                 role: "system",
-                content: "You are a helpful assistant for an storyteller"
+                content: "You are a helpful assistant for a storyteller. Create a story based on the user input, in a story book style where each page has a single sentence. Maximum 300 characters per sentence. Separate each sentence with new line."
             },
             {
                 role: "user",

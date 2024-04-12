@@ -12,7 +12,12 @@
     "deploy": "wrangler pages deploy ./dist"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.8.0",
+    "@mantine/core": "^7.8.0",
+    "@mantine/hooks": "^7.8.0",
     "@microsoft/fetch-event-source": "^2.0.1",
+    "@tabler/icons-react": "^3.2.0",
+    "embla-carousel-react": "^8.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -27,6 +32,9 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.14.4",
+    "postcss-simple-vars": "^7.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "wrangler": "^3.50.0"
