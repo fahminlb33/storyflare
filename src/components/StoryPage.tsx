@@ -9,12 +9,6 @@ export interface PageProps {
 export default function Page(props: PageProps) {
     const [image, setImage] = useState<string | null>(null)
 
-    // useEffect(() => {
-    //     fetch("https://picsum.photos/1024/1024")
-    //         .then(res => res.arrayBuffer())
-    //         .then(res => setImage(res))
-    // }, [])
-
     useEffect(() => {
         // generate image
         fetch("/api/create_page", {
@@ -22,8 +16,8 @@ export default function Page(props: PageProps) {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ prompt: props.caption }),
         })
-            .then(res => res.arrayBuffer())
-            .then(res => setImage(URL.createObjectURL(new Blob([res]))))
+            .then(res => res.blob())
+            .then(res => setImage(URL.createObjectURL(res)))
     }, [])
 
     if (!image) {

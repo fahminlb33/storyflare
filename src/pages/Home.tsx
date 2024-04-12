@@ -25,6 +25,7 @@ export default function Home() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ prompt }),
         })
+            // process response
             .then(res => res.json())
             .then(res => {
                 // get full story
@@ -36,14 +37,11 @@ export default function Home() {
                 for (let i = 0; i < pages.length; i++) {
                     setStoryContents(old => [...old, { i, caption: pages[i].trim(), }])
                 }
+            })
 
-                // set loading state
-                setIsLoading(false)
-            })
-            .catch(() => {
-                // set loading state
-                setIsLoading(false)
-            })
+            // set loading state
+            .then(() => setIsLoading(false))
+            .catch(() => setIsLoading(false))
     }
 
     return (

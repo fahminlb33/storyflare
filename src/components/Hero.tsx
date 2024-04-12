@@ -12,7 +12,7 @@ export default function HeroBullets() {
             <div className={classes.inner}>
                 <div className={classes.content}>
                     <Title className={classes.title}>
-                        A <span className={classes.highlight}>story book</span> <br /> powered by AI
+                        A <span className={classes.highlight}>storybook</span> <br /> powered by AI
                     </Title>
                     <Text c="dimmed" mt="md">
                         Build simple story book using LLM and diffucion models, powered by CloudFlare AI.
@@ -40,7 +40,7 @@ export default function HeroBullets() {
                     </List>
 
                     <Group mt={30}>
-                        <Button radius="xl" size="md" className={classes.control} onClick={() => window.open("https://github.com/fahminlb33/storyflare", "_blank")}>
+                        <Button radius="xl" size="md" className={classes.control} href="https://github.com/fahminlb33/storyflare" target='_blank' component='a'>
                             Source Code
                         </Button>
                     </Group>
