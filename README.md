@@ -14,6 +14,19 @@ Example prompt:
 - Story about photosynthesis for high school students
 - Story describing renewable energy for kids
 
+## Requirements
+
+- Node v20.12.0
+- npm v10.5.0
+- Wrangler v3.0.0 or newer
+
+## Tech Stack
+
+- Vite
+- React
+- Mantine
+- CloudFlare services used: Pages, Workers AI
+
 ## Deployment
 
 ```bash
