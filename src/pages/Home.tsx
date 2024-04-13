@@ -16,8 +16,9 @@ export default function Home() {
 
     function submit() {
         // set loading state
-        setStory("Generating...");
         setIsLoading(true);
+        setStory("Generating...");
+        setStoryContents([]);
 
         // generate story
         fetch("/api/create_story", {
