@@ -33,6 +33,9 @@ Example prompt:
 # clone the repo
 git clone https://github.com/fahminlb33/storyflare.git
 
+# change workdir
+cd storyflare
+
 # install dependencies
 npm install
 
