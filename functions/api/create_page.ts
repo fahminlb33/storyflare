@@ -31,7 +31,7 @@ export async function onRequestPost(context) {
     // run the AI - create background
     const result = await ai.run("@cf/stabilityai/stable-diffusion-xl-base-1.0", {
         // @ts-expect-error
-        prompt: backgroundPrompt.response
+        prompt: `${backgroundPrompt.response} with the style of James Gilleard`
     });
 
     return new Response(result);
